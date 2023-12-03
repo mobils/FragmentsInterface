@@ -5,8 +5,8 @@ android {
 
     defaultConfig {
         applicationId "com.example.fragmentsinterface"
-        minSdkVersion 21
-        targetSdk 33
+        minSdkVersion 27
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
