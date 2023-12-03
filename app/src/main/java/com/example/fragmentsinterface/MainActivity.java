@@ -28,20 +28,30 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnFragm
                     Fragment1 fragment1 = new Fragment1();
                     fm.beginTransaction().replace(R.id.contenidor1, fragment1).commit(); //.add si no hi ha res
                     // o .replace si vol substituir o afegir
+
+                             /*  ENVIAR DADES: si volem enviar informació al Fragment des del Main Activity
+                            Bundle data = new Bundle();
+                            data.putString("nom", "Eva");
+                            fragment1.setArguments(data);
+                            */
                 }
 
             }
         });
+
+
+
+
     }
 
+
     @Override
-    public void onFragment1Click() {
+    public void onFragment1Click(int numero, String siCal) {
         //Aquí arribarem quan el botó del fragment es clica
         //TODO: Mostrar toast
-        Toast.makeText(this,"Ha clicat al fragment1", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Ha clicat al fragment1" + numero, Toast.LENGTH_SHORT).show();
 
         //TODO: Inflar fragment2
     }
-
 
 }

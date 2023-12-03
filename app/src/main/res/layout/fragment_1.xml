@@ -7,7 +7,6 @@
     android:orientation="vertical"
     android:background="@color/colorPrimary">
 
-    <!--  Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,6 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Botó del Fragment 1"
-        android:id="@+id/botoFragment1"></Button>
+        android:id="@+id/botoFragment1"/>
 
 </LinearLayout>

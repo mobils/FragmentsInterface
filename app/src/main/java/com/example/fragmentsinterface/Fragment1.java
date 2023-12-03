@@ -43,7 +43,7 @@ public class Fragment1 extends Fragment {
         if (context instanceof OnFragment1Listener)
             listener=(OnFragment1Listener) context;
         else
-            throw new RuntimeException ("Has de fer que l'activitat escolti OnFragmen1Listener");
+            throw new RuntimeException ("Has de fer que l'activitat escolti OnFragmen1Listener" + context);
     }
 
     /**
@@ -85,7 +85,7 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View view) {
                 //TODO: Avisar al activity que s'ha clicat el botó
-                listener.onFragment1Click();  //d'aqui va al onFragment1Click del activity
+
             }
         });
 
@@ -94,8 +94,7 @@ public class Fragment1 extends Fragment {
 
 
 
-
     public interface OnFragment1Listener {
-        public void onFragment1Click();
+        public void onFragment1Click(int num, String segonSiCal);
     }
 }
