@@ -5,10 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".Fragment2">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- TODO: Update blank fragment layout: cal canviar el tipus de layout, posar color de fons -->
+    <!-- TODO ULTIM: enviar dades de la primera pantalla al fragment 2 i mostrar-ho -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:textSize="30sp"
         android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>
